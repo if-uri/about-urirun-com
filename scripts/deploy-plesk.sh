@@ -2,8 +2,8 @@
 # Publish about.urirun.com (static urirun presentation).
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-REMOTE="${IFURI_DEPLOY_HOST:-ifuri@ifuri.com}"
-DOCROOT="${URIRUN_ABOUT_DOCROOT:-/var/www/vhosts/ifuri.com/about.urirun.com}"
+REMOTE="${URIRUN_DEPLOY_HOST:-urirun@urirun.com}"
+DOCROOT="${URIRUN_ABOUT_DOCROOT:-/var/www/vhosts/urirun.com/about.urirun.com}"
 echo "== deploy about.urirun.com -> ${REMOTE}:${DOCROOT} =="
 rsync -az --delete \
   --exclude '.git' --exclude 'scripts' --exclude 'Makefile' \
