@@ -189,7 +189,7 @@ urirun node serve --registry registry.json --port 8765 --execute
 
   <section class="slide" id="sdk">
     <p class="eyebrow" data-i18n="sdk.eyebrow">One contract, any language</p>
-    <h2 data-i18n="sdk.h2">The same connector — Python, JS, Go, PHP.</h2>
+    <h2 data-i18n="sdk.h2">The same connector — Python, JS, PHP.</h2>
     <p class="lead" data-i18n="sdk.lead">The runtime is a contract, not a language. The SDK ships per language so urirun is a library inside your project. Each snippet emits the identical <code>urirun.bindings.v2</code> document — <code>urirun validate</code> accepts them all.</p>
     <div class="langgrid">
       <div class="l"><h4>python</h4><pre>c = urirun.connector(
@@ -203,11 +203,6 @@ def f(path: str):
     input:{required:["path"]},
     argv:["sha256sum","{path}"],
   })</pre></div>
-      <div class="l"><h4>go</h4><pre>urirun.NewConnector("hash","hash").
-  Command("sha256/command/file",
-    urirun.Schema{Required:
-      []string{"path"}},
-    []string{"sha256sum","{path}"})</pre></div>
       <div class="l"><h4>php</h4><pre>(new Urirun\Connector("hash","hash"))
   ->command("sha256/command/file",
     ["required"=>["path"]],
@@ -273,7 +268,7 @@ const I18N = {
     "pipeline.c4.h3":"Addressable errors","pipeline.c4.p":"Failures get a stable code, a category and a docs link — recorded, searchable, ticketable.",
     "project.eyebrow":"Free projections","project.h2":"One registry → MCP tools + A2A cards.",
     "project.lead":"Because every route is typed and addressable, the same registry projects — with no extra code — to <strong>MCP tools</strong> for LLM clients and an <strong>A2A agent card</strong> for agent-to-agent discovery. Serve it over HTTP with <code>urirun node serve</code>.",
-    "sdk.eyebrow":"One contract, any language","sdk.h2":"The same connector — Python, JS, Go, PHP.",
+    "sdk.eyebrow":"One contract, any language","sdk.h2":"The same connector — Python, JS, PHP.",
     "sdk.lead":"The runtime is a contract, not a language. The SDK ships per language so urirun is a library inside your project. Each snippet emits the identical <code>urirun.bindings.v2</code> document — <code>urirun validate</code> accepts them all.",
     "cli.eyebrow":"The CLI","cli.h2":"From a folder to a running node.",
     "cli.lead":"urirun is also a command line: adopt a project into bindings, compile a registry, run a route, serve a node, browse and install connectors — all from one tool.",
@@ -298,7 +293,7 @@ const I18N = {
     "pipeline.c4.h3":"Adresowalne błędy","pipeline.c4.p":"Błędy dostają stały kod, kategorię i link do docs — zapisane, przeszukiwalne, z ticketem.",
     "project.eyebrow":"Darmowe projekcje","project.h2":"Jeden rejestr → narzędzia MCP + karty A2A.",
     "project.lead":"Ponieważ każda trasa jest typowana i adresowalna, ten sam rejestr rzutuje się — bez dodatkowego kodu — na <strong>narzędzia MCP</strong> dla klientów LLM i <strong>kartę agenta A2A</strong> do odkrywania agent-do-agenta. Serwuj go po HTTP przez <code>urirun node serve</code>.",
-    "sdk.eyebrow":"Jeden kontrakt, dowolny język","sdk.h2":"Ten sam konektor — Python, JS, Go, PHP.",
+    "sdk.eyebrow":"Jeden kontrakt, dowolny język","sdk.h2":"Ten sam konektor — Python, JS, PHP.",
     "sdk.lead":"Runtime to kontrakt, nie język. SDK jest dla każdego języka, więc urirun to biblioteka w twoim projekcie. Każdy snippet emituje identyczny dokument <code>urirun.bindings.v2</code> — <code>urirun validate</code> przyjmuje wszystkie.",
     "cli.eyebrow":"CLI","cli.h2":"Od katalogu do działającego węzła.",
     "cli.lead":"urirun to także linia poleceń: zaadoptuj projekt do bindingów, skompiluj rejestr, uruchom trasę, serwuj węzeł, przeglądaj i instaluj konektory — wszystko z jednego narzędzia.",
@@ -323,7 +318,7 @@ const I18N = {
     "pipeline.c4.h3":"Adressierbare Fehler","pipeline.c4.p":"Fehler erhalten einen stabilen Code, eine Kategorie und einen Doku-Link — protokolliert, durchsuchbar, ticketfähig.",
     "project.eyebrow":"Kostenlose Projektionen","project.h2":"Ein Registry → MCP-Tools + A2A-Cards.",
     "project.lead":"Da jede Route typisiert und adressierbar ist, projiziert dasselbe Registry — ohne Extra-Code — auf <strong>MCP-Tools</strong> für LLM-Clients und eine <strong>A2A-Agent-Card</strong> für Agent-zu-Agent-Discovery. Per HTTP bereitstellen mit <code>urirun node serve</code>.",
-    "sdk.eyebrow":"Ein Vertrag, jede Sprache","sdk.h2":"Derselbe Connector — Python, JS, Go, PHP.",
+    "sdk.eyebrow":"Ein Vertrag, jede Sprache","sdk.h2":"Derselbe Connector — Python, JS, PHP.",
     "sdk.lead":"Die Laufzeit ist ein Vertrag, keine Sprache. Das SDK gibt es pro Sprache, sodass urirun eine Bibliothek in deinem Projekt ist. Jeder Ausschnitt gibt dasselbe <code>urirun.bindings.v2</code>-Dokument aus — <code>urirun validate</code> akzeptiert sie alle.",
     "cli.eyebrow":"Das CLI","cli.h2":"Vom Ordner zum laufenden Knoten.",
     "cli.lead":"urirun ist auch eine Kommandozeile: ein Projekt zu Bindings übernehmen, ein Registry kompilieren, eine Route ausführen, einen Knoten bereitstellen, Connectoren durchsuchen und installieren — alles aus einem Tool.",
