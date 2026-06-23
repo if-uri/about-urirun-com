@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.3.0]
+
+### Changed
+- **URI Node model** on the Mesh slide (EN/PL/DE): a laptop, VM or container are one object — a **URI Node** (a containerised one is a capsule), not separate things. Surface listings now include `GET /services`; the deploy example uses `--persist` so deployed routes survive a node restart.
+
 ## [0.2.0]
 
 ### Added
