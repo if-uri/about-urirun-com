@@ -1,0 +1,18 @@
+# about-urirun-com | 6f 298L | shell:3,less:1,javascript:1,python:1 | 2026-07-14
+# stats: 1 func | 1 cls | 6 mod | CC̄=8.0 | critical:0 | cycles:0
+# alerts[5]: CC main=8; fan-out main=7
+# hotspots[5]: main fan=7
+# evolution: baseline
+# Keys: M=modules, D=details, i=imports, e=exports, c=classes, f=functions, m=methods
+M[6]:
+  app.doql.less,35
+  assets/ifuri-ecobar.js,106
+  project.sh,66
+  scripts/check.py,71
+  scripts/deploy-plesk.sh,15
+  tree.sh,5
+D:
+  scripts/check.py:
+    e: main,Counter
+    Counter: __init__(0),handle_starttag(2),handle_endtag(1)
+    main()
